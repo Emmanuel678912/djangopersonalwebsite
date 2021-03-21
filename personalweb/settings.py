@@ -18,7 +18,7 @@ SECRET_KEY = '=++qvex5=o_cl7x+=vakwg!@x$&y#&2y*gc(0$sr&#whz+teq6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://emmanueligbinijesu.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'personalweb.urls'
@@ -134,6 +134,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
