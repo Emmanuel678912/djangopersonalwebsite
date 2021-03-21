@@ -1,7 +1,7 @@
 from pathlib import Path
 import os
-import django_database_url
 import django_heroku
+import dj_database_url
 from decouple import config
 
 
@@ -18,7 +18,7 @@ SECRET_KEY = '=++qvex5=o_cl7x+=vakwg!@x$&y#&2y*gc(0$sr&#whz+teq6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://emmanueligbinijesu.herokuapp.com/', '127.0.0.1']
 
 
 # Application definition
@@ -74,7 +74,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
