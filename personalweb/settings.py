@@ -114,7 +114,7 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'emmanueligbinijesu@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
+EMAIL_HOST_PASSWORD = 'RushSyndicate891?'
 EMAIL_PORT = 587
 
 # python -m smtpd -n -c DebuggingServer localhost:1025
